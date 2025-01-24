@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "/images/Senna banner.webp",
+    "title": "Slide 1",
+    "name": "McLaren",
+    "yearOfRelease": 2019,
+    "description": "A sleek and modern vehicle with outstanding performance."
+  },
+  {
+    "id": 2,
+    "imageUrl": "/images/Your paragraph text.webp",
+    "title": "Slide 2",
+    "name": "5-9 Februuary 2025",
+    "yearOfRelease": 2020,
+    "description": "Compact and fuel-efficient with great city driving capabilities."
+  },
+  {
+    "id": 3,
+    "imageUrl": "/images/ford banner.webp",
+    "title": "Slide 3",
+    "name": "Zero Labs",
+    "yearOfRelease": 1972,
+    "description": "Luxurious and comfortable, ideal for long-distance travel."
+  },
+  {
+    "id": 4,
+    "imageUrl": "/images/581A6472-Banner.webp",
+    "title": "Slide 4",
+    "name": "Mercedes AMG",
+    "yearOfRelease": 2022,
+    "description": "A cutting-edge electric vehicle with impressive range."
+  },
+  {
+    "id": 5,
+    "imageUrl": "/images/Porsche Speedster banner.webp",
+    "title": "Slide 5",
+    "name": "Porche",
+    "yearOfRelease": 2019,
+    "description": "Stylish and versatile, perfect for both city and off-road adventures."
+  },
+  {
+    "id": 6,
+    "imageUrl": "/images/image012-banner.webp",
+    "title": "Slide 6",
+    "name": "Lamborghini",
+    "yearOfRelease": 2022,
+    "description": "A robust SUV with powerful engine performance."
+  },
+  {
+    "id": 7,
+    "imageUrl": "/images/Banner.webp",
+    "title": "Slide 7",
+    "name": "Audi",
+    "yearOfRelease": 2020,
+    "description": "Compact yet spacious with advanced safety features."
+  },
+  {
+    "id": 8,
+    "imageUrl": "/images/Banner (1).webp",
+    "title": "Slide 8",
+    "name": "Ferrari",
+    "yearOfRelease": 2008,
+    "description": "A high-performance sports car with a sleek design."
+  },
+  {
+    "id": 9,
+    "imageUrl": "/images/Zagato banner.webp",
+    "title": "Slide 9",
+    "name": "Aston Martin",
+    "yearOfRelease": 2013,
+    "description": "An iconic muscle car with modern enhancements."
+  },
+  {
+    "id": 10,
+    "imageUrl": "/images/Banner (5).webp",
+    "title": "Slide 10",
+    "name": "Brabus KTM",
+    "yearOfRelease": 2022,
+    "description": "A family-friendly car with excellent fuel efficiency."
+  },
+  {
+    "id": 11,
+    "imageUrl": "/images/Coons 1 (2).webp",
+    "title": "Slide 11",
+    "name": "BMW",
+    "yearOfRelease": "2022",
+    "description": "A legendary sports car with cutting-edge technology."
+  },
+  {
+    "id": 12,
+    "imageUrl": "/images/Banner (4).webp",
+    "title": "Slide 12",
+    "name": "Porche",
+    "yearOfRelease": 2023,
+    "description": "An ultra-light supercar designed for speed and performance."
+  },
+  {
+    "id": 13,
+    "imageUrl": "/images/Banner (3).webp",
+    "title": "Slide 13",
+    "name": "Mercedes-AMG",
+    "yearOfRelease": 2021,
+    "description": "A practical and reliable vehicle for everyday use."
+  },
+  {"id": 14,
+    "imageUrl": "/images/Banner (2).webp",
+    "title": "Slide 14",
+    "name": "Porche",
+    "yearOfRelease": 2024,
+    "description": "A limited-edition luxury car with a unique aesthetic."
+  }
+]
