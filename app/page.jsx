@@ -7,7 +7,6 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 export default async function HomePage() {
-  // Read the JSON file from the file system
   const filePath = path.join(process.cwd(), 'public', 'data', 'vehicleslider.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   const vehicles = JSON.parse(fileContents);
