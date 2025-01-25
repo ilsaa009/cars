@@ -1,26 +1,66 @@
 import Image from "next/image";
+import { Star } from "lucide-react";
 
-export default function VehicleCard({ imageUrl, title, name, yearOfRelease, description }) {
+export default function VehicleCard({
+  imageUrl,
+  title,
+  name,
+  yearOfRelease,
+  location,
+  latestBid,
+  timeLeft,
+  favoritesCount,
+  auctionStartDate, 
+}) {
+  const [city, country] = location.split(", ");
+
   return (
-    <div className="bg-white p-6 shadow-xl rounded-md hover:shadow-2xl transition-shadow duration-300 relative w-full md:w-[500px] lg:w-[700px]">
+    <div className="bg-white p-4 shadow-xl hover:shadow-2xl transition-shadow duration-300 relative w-full max-w-[480px]">
       <div className="relative">
         <Image
           src={imageUrl}
           alt={name}
           width={1000}
           height={600}
-          className="object-cover w-full h-[400px] lg:h-[500px]"
+          className="object-cover w-full h-[600px] m-0 p-0"
         />
-        <div className="absolute bottom-8 left-0 w-full p-6 text-lg font-semibold">
-          {yearOfRelease}
+        <div className="absolute top-4 right-4 bg-black/75 text-white px-3 py-1 rounded-full flex items-center gap-2">
+          <Star className="w-4 h-4 text-yellow-400" />
+          <span className="text-sm">{favoritesCount}</span>
         </div>
-        <div className="absolute bottom-0 left-0 w-full p-6 text-2xl font-bold">
-          {name}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+          <div className="absolute bottom-4 left-4 text-white">
+            <p className="text-sm">{yearOfRelease}</p>
+            <h2 className="text-lg font-bold">{name}</h2>
+            <p className="text-sm">{title}</p>
+          </div>
+          <div className="absolute bottom-4 right-4 text-white text-right leading-tight">
+            <p className="text-sm">{city}</p>
+            <p className="text-sm">{country}</p>
+          </div>
         </div>
       </div>
-
-      <div className="mt-6">
-        <p className="text-gray-600 mt-4 text-lg">{description}</p>
+      <div className="p-4">
+        <div className="mt-4 flex justify-between items-center">
+          <div>
+            {latestBid ? (
+              <>
+                <p className="text-xs text-gray-400">Latest bid</p>
+                <p className="text-lg font-bold text-black">{latestBid}</p>
+              </>
+            ) : (
+              <p className="text-black font-bold text-lg text-center">
+                Auction Begins: {auctionStartDate}
+              </p>
+            )}
+          </div>
+          {timeLeft && (
+            <div>
+              <p className="text-xs text-gray-400 text-right">Time left</p>
+              <p className="text-lg font-bold text-yellow-400">{timeLeft}</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

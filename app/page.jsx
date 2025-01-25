@@ -7,24 +7,26 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 export default async function HomePage() {
-  const filePath = path.join(process.cwd(), 'public', 'data', 'vehicleslider.json');
+  const filePath = path.join(process.cwd(), 'public', 'data', 'vehicles.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   const vehicles = JSON.parse(fileContents);
 
   return (
     <>
-      <Header />
-      <Navbar />
-      <Hero />
-      <section id="vehicles" className="py-16 px-6 bg-gray-100">
+    <Header />
+    <Navbar />
+    <Hero />
+    <section id="vehicles" className="py-16 px-6 bg-gray-100">
         <h3 className="text-3xl font-bold text-center mb-8 text-black">Our Vehicles</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 max-w-screen-xl">
           {vehicles.map((vehicle) => (
-            <VehicleCard key={vehicle.id} {...vehicle} />
+            <div className="flex justify-center p-0 m-0" key={vehicle.id}>
+              <VehicleCard {...vehicle} />
+            </div>
           ))}
         </div>
       </section>
-      <Footer />
-    </>
+    <Footer />
+  </>
   );
 }

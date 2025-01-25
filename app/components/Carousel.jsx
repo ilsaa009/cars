@@ -17,6 +17,12 @@ const Carousel = ({ slides }) => {
             width={400} 
             height={200} 
           />
+           <div className="absolute bottom-8 left-0 w-full p-6 text-lg font-semibold">
+          {slide.yearOfRelease}
+        </div>
+        <div className="absolute bottom-0 left-0 w-full p-6 text-2xl font-bold">
+          {slide.name}
+        </div>
         </div>
       ))}
     </div>
