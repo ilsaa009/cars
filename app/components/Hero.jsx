@@ -18,8 +18,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="bg-white min-h-[60vh] flex justify-center items-center">
-      <div className="w-full max-w-[56vw] lg:max-w-[64vw] xl:max-w-[68vw]">
+    <div className="bg-white min-h-[60vh] flex justify-center items-center px-4 sm:px-6 md:px-8">
+      <div className="w-full max-w-screen-sm sm:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
         {slides.length > 0 ? (
           <Carousel slides={slides} />
         ) : (

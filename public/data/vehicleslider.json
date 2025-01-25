@@ -2,112 +2,160 @@
   {
     "id": 1,
     "imageUrl": "/images/Senna banner.webp",
-    "title": "Slide 1",
-    "name": "McLaren",
+    "title": "Senna XP - #1 of 10",
+    "name": "MCLAREN",
     "yearOfRelease": 2019,
-    "description": "A sleek and modern vehicle with outstanding performance."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "HAMBURG, GERMANY",
+    "latestBid": "€700,000",
+    "timeLeft": "5 days",
+    "favoritesCount": 125,
+    "button": "Bid Now"
   },
   {
     "id": 2,
-    "imageUrl": "/images/Your paragraph text.webp",
-    "title": "Slide 2",
-    "name": "5-9 Februuary 2025",
-    "yearOfRelease": 2020,
-    "description": "Compact and fuel-efficient with great city driving capabilities."
+    "imageUrl": "/images/Retro.webp",
+    "title": "DB5 Continuation Goldfinger",
+    "name": "5-9 February 2025",
+    "yearOfRelease": "SBX Cars at Retromobile",
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "Paris, France",
+    "favoritesCount": 137
   },
   {
     "id": 3,
     "imageUrl": "/images/ford banner.webp",
-    "title": "Slide 3",
-    "name": "Zero Labs",
+    "title": "Bronco Development Vechicle 001",
+    "name": "ZERO LABS",
     "yearOfRelease": 1972,
-    "description": "Luxurious and comfortable, ideal for long-distance travel."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "CALIFORNIA, USA",
+    "latestBid": "US$110,000",
+    "timeLeft": "4 days",
+    "favoritesCount": 37,
+    "button": "Bid Now"
   },
   {
     "id": 4,
     "imageUrl": "/images/581A6472-Banner.webp",
-    "title": "Slide 4",
-    "name": "Mercedes AMG",
+    "title": "G63 4X4 Brabus 800",
+    "name": "MERCEDES-AMG",
     "yearOfRelease": 2022,
-    "description": "A cutting-edge electric vehicle with impressive range."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "DUBAI, UNITED ARAB EMIRATES",
+    "latestBid": "1,000,000 AED",
+    "timeLeft": "3 days",
+    "favoritesCount": 61,
+    "button": "Bid Now"
   },
   {
     "id": 5,
     "imageUrl": "/images/Porsche Speedster banner.webp",
-    "title": "Slide 5",
-    "name": "Porche",
+    "title": "911 Speedster",
+    "name": "PORCHE",
     "yearOfRelease": 2019,
-    "description": "Stylish and versatile, perfect for both city and off-road adventures."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "WASHINGTON, USA",
+    "latestBid": "US$235,000",
+    "timeLeft": "5 days",
+    "favoritesCount": 59,
+    "button": "Bid Now"
   },
   {
     "id": 6,
     "imageUrl": "/images/image012-banner.webp",
-    "title": "Slide 6",
+    "title": "Huracan EVO Coupe",
     "name": "Lamborghini",
     "yearOfRelease": 2022,
-    "description": "A robust SUV with powerful engine performance."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "Ontario, Canada",
+    "auctionStartDate": "18 February",
+    "favoritesCount": 16,
+    "button": "Preview"
   },
   {
     "id": 7,
     "imageUrl": "/images/Banner.webp",
-    "title": "Slide 7",
-    "name": "Audi",
+    "title": "R8 5.2 Quattro V10 2D Coupe",
+    "name": "AUDI",
     "yearOfRelease": 2020,
-    "description": "Compact yet spacious with advanced safety features."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "TROY, USA",
+    "auctionStartDate": "28 January",
+    "favoritesCount": 39,
+    "button": "Preview"
   },
   {
     "id": 8,
     "imageUrl": "/images/Banner (1).webp",
-    "title": "Slide 8",
-    "name": "Ferrari",
+    "title": "F430",
+    "name": "FERRARI",
     "yearOfRelease": 2008,
-    "description": "A high-performance sports car with a sleek design."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "DUBAI, UNITED ARAB EMIRATES",
+    "auctionStartDate": "17 February",
+    "favoritesCount": 15,
+    "button": "Preview"
   },
   {
     "id": 9,
     "imageUrl": "/images/Zagato banner.webp",
-    "title": "Slide 9",
+    "title": "V12 Zagato - 1 of 18 RHD Spec",
     "name": "Aston Martin",
     "yearOfRelease": 2013,
-    "description": "An iconic muscle car with modern enhancements."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "COBHAM, UNITED KINGDOM",
+    "auctionStartDate": "6 February",
+    "favoritesCount": 14,
+    "button": "Preview"
   },
   {
     "id": 10,
     "imageUrl": "/images/Banner (5).webp",
-    "title": "Slide 10",
-    "name": "Brabus KTM",
+    "title": "1300r",
+    "name": "BRABUS KTM",
     "yearOfRelease": 2022,
-    "description": "A family-friendly car with excellent fuel efficiency."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "BIELSKO-BIALA, POLAND",
+    "auctionStartDate": "19 February",
+    "favoritesCount": 13,
+    "button": "Preview"
   },
   {
     "id": 11,
     "imageUrl": "/images/Coons 1 (2).webp",
-    "title": "Slide 11",
+    "title": "M850i xDrive Gran Coupe",
     "name": "BMW",
-    "yearOfRelease": "2022",
-    "description": "A legendary sports car with cutting-edge technology."
+    "yearOfRelease": 2022,
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "Gelderland, Netherlands",
+    "auctionStartDate": "31 January",
+    "favoritesCount": 10,
+    "button": "Preview"
   },
   {
     "id": 12,
-    "imageUrl": "/images/Banner (4).webp",
-    "title": "Slide 12",
-    "name": "Porche",
-    "yearOfRelease": 2023,
-    "description": "An ultra-light supercar designed for speed and performance."
+    "imageUrl": "/images/Banner (3).webp",
+    "title": "GT Black Series",
+    "name": "MERCEDES-AMG",
+    "yearOfRelease": 2021,
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "DUBAI, UNITED ARAB EMIRATES",
+    "latestBid": "US$8,500",
+    "timeLeft": "12 days",
+    "favoritesCount": 130,
+    "button": "Preview"
   },
   {
     "id": 13,
-    "imageUrl": "/images/Banner (3).webp",
-    "title": "Slide 13",
-    "name": "Mercedes-AMG",
-    "yearOfRelease": 2021,
-    "description": "A practical and reliable vehicle for everyday use."
-  },
-  {"id": 14,
     "imageUrl": "/images/Banner (2).webp",
-    "title": "Slide 14",
-    "name": "Porche",
+    "title": "911 (992) GT3 RS",
+    "name": "PORCHE",
     "yearOfRelease": 2024,
-    "description": "A limited-edition luxury car with a unique aesthetic."
+    "description": "A rare masterpiece of engineering, built for speed and luxury.",
+    "location": "DUBAI, UNITED ARAB EMIRATES",
+    "auctionStartDate": "27 January",
+    "favoritesCount": 158,
+    "button": "Preview"
   }
 ]
