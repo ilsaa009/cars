@@ -1,0 +1,19 @@
+{
+  "vehicles": [
+    {
+      "id": "1",
+      "name": "Mercedes-AMG",
+      "title": "G63 4x4² Brabus 800",
+      "yearOfRelease": "2022",
+      "description": "SBX Cars is proud to offer for sale this 2019 Porsche 911 Speedster...",
+      "images": [
+        { "url": "/DetailsImages/581A6265-HDR.webp" },
+        { "url": "/DetailsImages/581A6562-HDR.webp" },
+        { "url": "/DetailsImages/581A6595-HDR.webp" },
+        { "url": "/DetailsImages/brabus 800 hero.webp" },
+        { "url": "/DetailsImages/Brabus plate (2).webp" },
+        { "url": "/DetailsImages/Brabus plate (8).webp" }
+      ]
+    }
+  ]
+}

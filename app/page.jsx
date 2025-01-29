@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import { promises as fs } from 'fs';
 import path from 'path';
+import Navbar1 from './components/Navbar1';
 
 export default async function HomePage() {
   const filePath = path.join(process.cwd(), 'public', 'data', 'vehicles.json');
@@ -13,8 +14,6 @@ export default async function HomePage() {
 
   return (
     <>
-    <Header />
-    <Navbar />
     <Hero />
     <section id="vehicles" className="py-16 px-6 bg-gray-100">
         <h3 className="text-3xl font-bold text-center mb-8 text-black">Our Vehicles</h3>

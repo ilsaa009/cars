@@ -37,7 +37,7 @@ body {
 .embla__slide {
   position: relative;
   min-width: 100%;
-  height: 100%;
+  height: 600px;
 }
 
 .embla__slide img {
@@ -45,3 +45,33 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* Change pagination bullets to white */
+.swiper-pagination-bullet {
+  background-color: white; /* Default color */
+  opacity: 0.6; /* Slightly transparent */
+  width: 12px; /* Custom size */
+  height: 12px; /* Custom size */
+  margin: 0 8px; /* Spacing between bullets */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Active bullet style */
+.swiper-pagination-bullet-active {
+  background-color: #ff7f50; /* Highlight color for the active bullet */
+  opacity: 1; /* Fully visible */
+  transform: scale(1.3); /* Enlarge active bullet */
+}
+
+/* Custom placement of pagination */
+.swiper-pagination {
+  bottom: 20px; /* Adjust position at the bottom */
+  text-align: center; /* Center-align the bullets */
+}
+
+/* Pagination hover effect (optional) */
+.swiper-pagination-bullet:hover {
+  opacity: 1; /* Fully visible on hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
