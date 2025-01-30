@@ -28,7 +28,7 @@ export default function Hero() {
 
   return (
     <div className="bg-white flex justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10">
-      <div className="w-full max-w-[90%] sm:max-w-[80%] md:max-w-[75%] lg:max-w-[65%] xl:max-w-[50%] h-[400px] sm:h-[350px] md:h-[400px] lg:h-[300px] xl:h-[250px] mb-10 lg:mb-16">
+      <div className="w-[600px] sm:w-[800px] md:w-[900px] lg:w-[1400px] xl:w-[1270px] h-[400px] sm:h-[400px] md:h-[500px] lg:h-[500px] xl:h-[500px]">
         {loading ? (
           <p className="text-center text-gray-500">Loading...</p>
         ) : error ? (

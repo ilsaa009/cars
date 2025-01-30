@@ -1,33 +1,9 @@
 [
     {
       "id": 1,
-      "imageUrl": "/cardImages/brabus_800_6.jpg",
-      "title": "G63 4X4 Brabus 800",
-      "name": "MERCEDES-AMG",
-      "yearOfRelease": 2022,
-      "description": "A rare masterpiece of engineering, built for speed and luxury.",
-      "location": "DUBAI, UNITED ARAB EMIRATES",
-      "latestBid": "1,000,000 AED",
-      "timeLeft": "3 days",
-      "favoritesCount": 61
-    },
-    {
-      "id": 2,
-      "imageUrl": "/cardImages/DSC_8775.webp",
-      "title": "Bronco Development Vechicle 001",
-      "name": "ZERO LABS",
-      "yearOfRelease": 1972,
-      "description": "A rare masterpiece of engineering, built for speed and luxury.",
-      "location": "CALIFORNIA, USA",
-      "latestBid": "US$110,000",
-      "timeLeft": "4 days",
-      "favoritesCount": 37
-    },
-    {
-      "id": 3,
       "imageUrl": "/cardImages/porche-2019.webp",
       "title": "911 Speedster",
-      "name": "PoRCHE",
+      "name": "PORCHE",
       "yearOfRelease": 2019,
       "description": "A rare masterpiece of engineering, built for speed and luxury.",
       "location": "WASHINGTON, USA",
@@ -36,7 +12,7 @@
       "favoritesCount": 59
     },
     {
-      "id": 4,
+      "id": 2,
       "imageUrl": "/cardImages/mclaren.webp",
       "title": "Senna XP - #1 of 10",
       "name": "MCLAREN",
@@ -48,7 +24,7 @@
       "favoritesCount": 125
     },
     {
-      "id": 5,
+      "id": 3,
       "imageUrl": "/cardImages/mercedes-2021.webp",
       "title": "GT Black Series",
       "name": "MERCEDES-AMG",
@@ -60,7 +36,7 @@
       "favoritesCount": 130
     },
     {
-      "id": 6,
+      "id": 4,
       "imageUrl": "/cardImages/porche-2024.webp",
       "title": "911 (992) GT3 RS",
       "name": "PORCHE",
@@ -71,7 +47,7 @@
       "favoritesCount": 158
     },
     {
-      "id": 7,
+      "id": 5,
       "imageUrl": "/cardImages/audi.webp",
       "title": "R8 5.2 Quattro V10 2D Coupe",
       "name": "AUDI",
@@ -82,7 +58,7 @@
       "favoritesCount": 39
     },
     {
-      "id": 8,
+      "id": 6,
       "imageUrl": "/cardImages/BMW.webp",
       "title": "M850i xDrive Gran Coupe",
       "name": "BMW",
@@ -93,7 +69,7 @@
       "favoritesCount": 10
     },
     {
-      "id": 9,
+      "id": 7,
       "imageUrl": "/cardImages/ASTON.webp",
       "title": "DB5 Continuation Goldfinger",
       "name": "Aston Martin",
@@ -104,7 +80,7 @@
       "favoritesCount": 137
     },
     {
-      "id": 11,
+      "id": 8,
       "imageUrl": "/cardImages/martin.webp",
       "title": "V12 Zagato - 1 of 18 RHD Spec",
       "name": "Aston Martin",
@@ -115,7 +91,7 @@
       "favoritesCount": 14
     },
     {
-      "id": 12,
+      "id": 9,
       "imageUrl": "/cardImages/Ferrari.webp",
       "title": "F430",
       "name": "FERRARI",
@@ -126,7 +102,7 @@
       "favoritesCount": 15
     },
     {
-      "id": 13,
+      "id": 10,
       "imageUrl": "/cardImages/lamborghini.webp",
       "title": " Huracan EVO Coupe",
       "name": "Lamborghini",
@@ -137,7 +113,7 @@
       "favoritesCount": 16
     },
     {
-      "id": 14,
+      "id": 11,
       "imageUrl": "/cardImages/Brabus.webp",
       "title": "1300r",
       "name": "BRABUS KTM",

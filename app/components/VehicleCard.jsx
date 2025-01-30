@@ -28,7 +28,7 @@ export default function VehicleCard({
             className="object-cover w-full h-[600px] m-0 p-0"
           />
           <div className="absolute top-4 right-4 bg-black/75 text-white px-3 py-1 rounded-full flex items-center gap-2">
-            <Star className="w-4 h-4 text-yellow-400" />
+            <Star className="w-4 h-4 text-white" />
             <span className="text-sm">{favoritesCount}</span>
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
@@ -52,8 +52,8 @@ export default function VehicleCard({
                   <p className="text-lg font-bold text-black">{latestBid}</p>
                 </>
               ) : (
-                <p className="text-black flex justify-center items-center font-bold text-lg">
-                  Auction Begins: {auctionStartDate}
+                <p className="text-black flex justify-center items-center text-lg">
+                  Auction Begins: <span className=" px-2 font-bold">{auctionStartDate}</span>
                 </p>
               )}
             </div>

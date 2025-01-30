@@ -21,13 +21,13 @@ const CustomSwiper = ({ slides }) => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative">
+            <div className="relative w-full h-[400px] sm:h-[400px] md:h-[500px] lg:h-[500px] xl:h-[500px]">
               <Image
                 src={slide.imageUrl}
                 alt={slide.title}
-                width={1200}
-                height={600}
-                className="object-cover w-full h-full"
+                layout="fill" // Makes it responsive
+                objectFit="cover" // Ensures it fills the width while keeping height
+                className="w-full h-full"
               />
               <div className="absolute bottom-4 left-4 w-full p-6">
                 <div className="text-sm text-gray-200">{slide.yearOfRelease}</div>

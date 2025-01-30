@@ -9,6 +9,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isLoginOpen, setIsLoginOpen] = useState(false); 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -29,7 +30,7 @@ export default function Navbar() {
     setIsSearchOpen(false); 
   };
   return (
-    <nav className="bg-white text-gray-900 sticky top-0 z-10">
+    <nav className="bg-white text-gray-900 sticky top-0 z-10 py-6">
       <div className="container mx-auto flex justify-between items-center py-2 sticky top-0 bg-white border-b border-gray-300 z-50">
         <div className="flex items-center">
           <button
@@ -43,8 +44,8 @@ export default function Navbar() {
           <Image
             src="/sbx-cars-sb-2024.svg"
             alt="SBX Cars Logo"
-            width={200}
-            height={200}
+            width={250}
+            height={300}
           />
         </div>
 
@@ -75,11 +76,72 @@ export default function Navbar() {
             </div>
           )}
 
-          <button className="text-black py-1 px-4 rounded-md hover:text-blue-700">
+          <button 
+          onClick={() => setIsLoginOpen(true)}
+          className="text-black py-1 px-4 hover:text-blue-700">
             Sign In
           </button>
         </div>
       </div>
+      {isLoginOpen && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+            <div className="bg-white p-8 shadow-lg w-96 relative">
+              <button
+                onClick={() => setIsLoginOpen(false)}
+                className="absolute top-2 right-2 text-gray-600 text-2xl hover:text-gray-900"
+              >
+                ✕
+              </button>
+
+              <h2 className="text-2xl font-semibold text-center mb-4">Login</h2>
+              <p className="text-center text-gray-600 mb-4">
+                Please log in to watch, bid, comment, or sell
+              </p>
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full p-2 mb-4 border border-gray-400"
+              />
+              <div className="relative w-full mb-4">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className="w-full p-2 border border-gray-400 pr-16" 
+                />
+                <span className="absolute top-1/2 transform -translate-y-1/2 right-4 text-sm text-black font-bold cursor-pointer">
+                 | Forget?
+                </span>
+              </div>
+              <button
+                className="w-full text-black py-2 hover:opacity-80"
+                style={{ backgroundColor: "#baa158" }}
+              >
+                Log In
+              </button>
+              <p className="text-center mt-4 text-gray-600">
+                Don&apos;t have an account?{" "}
+                <button
+              
+                  className="text-black font-bold underline"
+                >
+                  Sign up here
+                </button>
+              </p>
+              <div className="flex items-center my-6">
+                <div className="flex-1 border-t border-gray-300"></div>
+                <span className="px-2 text-gray-500">or</span>
+                <div className="flex-1 border-t border-gray-300"></div>
+              </div>
+
+              <button className="w-full bg-white text-black py-3 mb-4 border border-gray-400">
+                Continue with Google
+              </button>
+              <button className="w-full bg-white text-black py-3 border border-gray-400">
+                Continue with Facebook
+              </button>
+            </div>
+          </div>
+        )}
 
       {isMenuOpen && (
         <div className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-50">
