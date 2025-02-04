@@ -1,11 +1,8 @@
-import VehicleCard from './components/VehicleCard';
-import Header from './components/Header';
+import VehicleCard from './components/VehicleCard';;
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import { promises as fs } from 'fs';
 import path from 'path';
-import Navbar1 from './components/Navbar1';
 
 export default async function HomePage() {
   const filePath = path.join(process.cwd(), 'public', 'data', 'vehicles.json');
@@ -15,7 +12,7 @@ export default async function HomePage() {
   return (
     <>
     <Hero />
-    <section id="vehicles" className="py-16 px-6 bg-gray-100">
+    <section id="vehicles" className="py-16 px-6 bg-white">
         <h3 className="text-3xl font-bold text-center mb-8 text-black">Our Vehicles</h3>
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 max-w-screen-xl">
           {vehicles.map((vehicle) => (

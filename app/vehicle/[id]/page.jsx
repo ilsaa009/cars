@@ -18,34 +18,35 @@ const VehicleDetailsPage = async ({ params }) => {
   }
 
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-32 mx-auto bg-white">
+    <div className="px-4 sm:px-4md:px-8 lg:px-16 xl:px-32 mx-auto bg-white">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl">
           <span className="text-gray-500">{vehicle.yearOfRelease}</span>{" "}
           <span className="text-black font-bold">{vehicle.name}</span>{" "}
           <span className="text-gray-500">{vehicle.title}</span>{" "}
           <span className="text-gray-500 font-bold"> | </span>{" "}
-          <span className="text-lg text-black">Reserve Not Met</span>
+          <span className="text-sm sm:hidden text-black">Reserve Not Met</span>
         </h1>
       </div>
 
-      <div className="sticky top-0 z-50 bg-white flex flex-col lg:flex-row justify-between py-6 w-full">
+      <div className="sticky top-0 z-50 bg-white flex flex-col lg:flex-row justify-between py-6 w-full" style={{ zIndex: 50 }}>
         <div className="flex items-center gap-2 text-lg font-semibold text-black">
           <p>{vehicle.latestBid?.toLocaleString() || "Not Available"}</p>
           <span className="text-gray-400">|</span>
           <p>{vehicle.auctionTime || "00:00:00"}</p>
           <span className="text-gray-400">|</span>
-          <p>
+          <p className="hidden sm:flex gap-1">
             <span className="font-bold">{vehicle.commentsCount || 0}</span> Comment
           </p>
-          <span className="text-gray-400">|</span>
-          <p>
+          <span className="text-gray-400 hidden sm:inline">|</span>
+          <p className="hidden sm:flex gap-1">
             <span className="font-bold">{vehicle.bidsCount || 0}</span> Bids
           </p>
         </div>
 
+
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-4 mt-4 lg:mt-0">
-          <div className="flex gap-4 flex-wrap lg:flex-nowrap lg:ml-auto">
+          <div className="flex gap-4 flex-wrap md:absolute md:mt-4 mb-4 md:top-0 md:right-0 lg:static lg:flex-nowrap lg:ml-auto sm:w-full sm:grid sm:grid-cols-2 sm:gap-4">
             <button
               className="border px-6 py-5 flex items-center justify-center gap-2"
               style={{
@@ -70,8 +71,10 @@ const VehicleDetailsPage = async ({ params }) => {
               Share
             </button>
           </div>
+
+          
           <button
-            className="border px-6 py-5 flex items-center justify-center gap-2 mt-4 lg:mt-0 lg:w-auto"
+            className="border px-6 py-5 flex items-center justify-center gap-2 mt-4 md:mt-10 lg:mt-0 lg:w-auto"
             style={{
               color: "black",
               borderColor: "black",
@@ -84,35 +87,32 @@ const VehicleDetailsPage = async ({ params }) => {
         </div>
       </div>
       <div className="flex w-full gap-6 flex-col lg:flex-row">
-      <div className="w-full lg:w-3/4 mt-6">
-        <Image
-          src={vehicle.images[0].url}
-          alt={vehicle.title}
-          width={2058}
-          height={600}
-          className="w-full h-auto lg:h-[600px]" 
-        />
-      </div>
+        <div className="w-full lg:w-3/4 mt-6">
+          <Image
+            src={vehicle.images[0].url}
+            alt={vehicle.title}
+            width={2058}
+            height={600}
+            className="w-full h-auto lg:h-[600px]" 
+          />
+        </div>
 
-      <div className="w-full lg:w-1/4 mt-6 flex flex-col justify-between">
-        <div className="flex overflow-x-auto lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:gap-2 lg:h-[600px] lg:overflow-hidden">
-          {vehicle.images.slice(1).map((image, index) => (
-            <div key={index} className="w-32 h-24 flex-shrink-0 lg:w-full lg:h-full">
-              <Image
-                src={image.url}
-                alt={`Thumbnail ${index + 1}`}
-                width={120}
-                height={80}
-                className="w-full h-full object-cover cursor-pointer"
-              />
-            </div>
-          ))}
+        <div className="w-full lg:w-1/4 mt-6 flex flex-col justify-between">
+          <div className="flex overflow-x-auto lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:gap-2 lg:h-[600px] lg:overflow-hidden">
+            {vehicle.images.slice(1).map((image, index) => (
+              <div key={index} className="w-32 h-24 flex-shrink-0 lg:w-full lg:h-full">
+                <Image
+                  src={image.url}
+                  alt={`Thumbnail ${index + 1}`}
+                  width={120}
+                  height={80}
+                  className="w-full h-full object-cover cursor-pointer"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-
-
-
       <div className="mt-6 pb-4 flex flex-col lg:flex-row justify-between items-center w-full">
         <nav className="flex gap-6 text-lg text-black font-semibold w-full lg:w-3/4 px-6 py-3 bg-gray-100">
           <span className="border-b-2 border-gray-600 pb-2 cursor-pointer">All</span>

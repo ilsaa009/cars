@@ -13,7 +13,10 @@ const CustomSwiper = ({ slides }) => {
     <div className="relative">
       <Swiper
         modules={[Navigation, Autoplay]}
-        navigation
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
         autoplay={{ delay: 3000 }}
         loop
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -25,11 +28,11 @@ const CustomSwiper = ({ slides }) => {
               <Image
                 src={slide.imageUrl}
                 alt={slide.title}
-                layout="fill" // Makes it responsive
-                objectFit="cover" // Ensures it fills the width while keeping height
+                layout="fill"
+                objectFit="cover"
                 className="w-full h-full"
               />
-              <div className="absolute bottom-4 left-4 w-full p-6">
+              <div className="absolute bottom-4 left-4 w-full p-6 md:block lg:block hidden">
                 <div className="text-sm text-gray-200">{slide.yearOfRelease}</div>
                 <div className="text-4xl font-bold text-white">{slide.name}</div>
                 <div className="text-sm text-gray-200">{slide.title}</div>
@@ -45,17 +48,32 @@ const CustomSwiper = ({ slides }) => {
                   ))}
                 </div>
               </div>
-              <div className="absolute bottom-4 right-4 p-6">
+              <div className="absolute bottom-4 right-4 p-6 md:block lg:block hidden">
                 {slide.button && (
                   <button className="bg-white text-black px-8 py-4 shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out">
                     {slide.button}
                   </button>
                 )}
-              </div>
+              </div>  
             </div>
+            <div className="block md:hidden lg:hidden w-full p-0 py-8">
+                <div className="text-lg text-gray-900">{slide.yearOfRelease}</div>
+                <div className="text-3xl font-bold text-black">{slide.name}</div>
+                <div className="text-lg text-gray-900">{slide.title}</div>
+                <div className="absolute bottom-4 right-4 p-6">
+                {slide.button && (
+                  <button className="bg-gray-200 text-black px-8 py-4 shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out">
+                    {slide.button}
+                  </button>
+                )}
+              </div>  
+              </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div className="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl p-2  shadow-lg hover:bg-gray-200 transition-all bg-transparent"></div>
+      <div className="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl p-2  shadow-lg hover:bg-gray-200 transition-all bg-transparent"></div>
     </div>
   );
 };

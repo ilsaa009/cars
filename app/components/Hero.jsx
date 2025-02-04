@@ -27,8 +27,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="bg-white flex justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10">
-      <div className="w-[600px] sm:w-[800px] md:w-[900px] lg:w-[1400px] xl:w-[1270px] h-[400px] sm:h-[400px] md:h-[500px] lg:h-[500px] xl:h-[500px]">
+    <div className="bg-white flex justify-center py-8 items-center px-4 sm:px-6 md:px-8 lg:px-10">
+      <div className="w-[600px] sm:w-[800px] md:w-[900px] lg:w-[1400px] xl:w-[1270px] h-[600px] sm:h-[400px] md:h-[500px] lg:h-[500px] xl:h-[500px]">
         {loading ? (
           <p className="text-center text-gray-500">Loading...</p>
         ) : error ? (
